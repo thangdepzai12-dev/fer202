@@ -20,6 +20,12 @@ export function Excercise2() {
     { name: "C", category: "Retail", start: 2005, end: 2015 },
     { name: "D", category: "Auto", start: 2001, end: 2008 }
   ];
+  const congtyCatrgory = companies.filter(c => c.category === "Tech");
+
+ const p=people[1]
+const isTeen= p => p.age >= 13 && p.age <= 19;
+
+
 
   const teemAvarge = people => people.reduce((a, b) => a + b.age, 0) / people.length;
   const teemList = people.filter(p => p.age >= 13 && p.age <= 19).map(p => <span key={p.id}>{p.name},{p.age} </span>);
@@ -46,6 +52,25 @@ export function Excercise2() {
     <>
       <h1>Excersise2</h1>
       <p>Các phần tử của mảng </p>
+      
+     <>
+     <p>công ty cat ==tech</p>
+     <p>{congtyCatrgory.name }</p>
+          <p>{congtyCatrgory.start }</p>
+
+     <p>{congtyCatrgory.category }</p>
+
+     <p>{congtyCatrgory.end }</p>
+
+     </>
+
+      <>
+        <p>Người thứ 2  </p>
+        <p>{p.age}</p>
+        <p>{p.id}</p>
+        <p>{p.name}</p>
+        </>
+        <p>Người thứ 2 có phải tuổi tin không {isTeen? "có ": "không"}</p>
       <ul>
         <li>{arr.map((x) => <span key={x}>{x}, </span>)}</li>
       </ul>

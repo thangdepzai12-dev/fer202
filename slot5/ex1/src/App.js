@@ -6,8 +6,8 @@ import { Excercise2 } from './components/excersise2';
 function App() {
   return (
     <div className="App">
-      <Excercise1/> 
-      <Excercise2/>
+      <Excercise1 />  
+      <Excercise2 />
     
 
       

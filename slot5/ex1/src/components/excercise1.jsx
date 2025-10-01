@@ -15,7 +15,7 @@ export function Excercise1() {
       street: "123 Main St"
     }
   };
-  const { address: { street, city = "Unknown City" } } = person;
+  const { address: { street, city =  "Unknown City" } } = person;
     return (
     <>
       <h1>Excercise 1</h1>
