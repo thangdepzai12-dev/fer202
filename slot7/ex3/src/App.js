@@ -9,8 +9,9 @@ function App() {
   return (
     <div>
       <Banner />
-      <GridLayout />
       <Navbar />
+      <GridLayout />
+    
       
     </div>
   );
