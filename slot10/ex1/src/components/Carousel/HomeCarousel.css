@@ -1,0 +1,85 @@
+/* --- HOME CAROUSEL --- */
+.main-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.main-carousel:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* Ảnh carousel */
+.main-carousel img {
+  filter: brightness(90%);
+  transition: transform 0.6s ease, filter 0.5s ease;
+}
+
+.main-carousel:hover img {
+  filter: brightness(100%);
+  transform: scale(1.03);
+}
+
+/* Caption đẹp và rõ */
+.main-carousel .carousel-caption {
+  bottom: 20px;
+  left: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.main-carousel .carousel-caption h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.main-carousel .carousel-caption p {
+  color: #f8f9fa;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 700px;
+}
+
+/* Badge style */
+.badge-genre {
+  background: linear-gradient(135deg, #ffdd00, #ffc107);
+  color: #212529 !important;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+.badge.bg-secondary {
+  background: #6c757d !important;
+  font-weight: 500;
+}
+
+/* Carousel indicators (3 chấm bên dưới) */
+.carousel-indicators [data-bs-target] {
+  background-color: #dc3545;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: #e63946;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Nút chuyển trái/phải */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) drop-shadow(0 0 4px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.2);
+}

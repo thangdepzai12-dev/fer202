@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+/* Basic styling */
+body {
+  background: #f5f7fb;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-carousel {
+  margin-bottom: 1.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-spacer {
+  margin-top: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* MovieCard */
+.movie-card {
+  transition: transform .18s ease, box-shadow .18s ease;
 }
-
-.App-link {
-  color: #61dafb;
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* card image aspect */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+/* small tweaks */
+.badge-genre {
+  margin-left: 8px;
+}
+/* Filter Card */
+.filter-card .form-control, .filter-card .form-select {
+  margin-bottom: 0.5rem;
 }

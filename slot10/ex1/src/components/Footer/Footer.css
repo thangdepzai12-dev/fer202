@@ -1,4 +1,3 @@
-/* Footer basic styling */
 footer {
   background-color: #f8f9fa;
   text-align: center;
@@ -8,19 +7,6 @@ footer {
   color: #333;
   font-size: 0.95rem;
 }
-
-/* Add spacing between lines */
-footer p {
-  margin: 0.25rem 0;
-}
-
-/* Style the email link */
-footer a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  color: #0056b3;
-}
+footer p { margin: 0.25rem 0; }
+footer a { color: #007bff; text-decoration: none; }
+footer a:hover { text-decoration: underline; color: #0056b3; }
